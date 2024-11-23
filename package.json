@@ -1,0 +1,31 @@
+{
+  "name": "joonapp-api",
+  "version": "0.0.1",
+  "description": "Unofficial API for interacting with Joon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shatindle/joonapp-api.git"
+  },
+  "keywords": [
+    "joonapp",
+    "joon",
+    "api",
+    "adhd"
+  ],
+  "author": "sha.tindle@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shatindle/joonapp-api/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/shatindle/joonapp-api#readme",
+  "dependencies": {
+    "@google-cloud/firestore": "^7.10.0",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2"
+  }
+}
