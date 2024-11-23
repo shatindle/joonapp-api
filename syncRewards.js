@@ -18,6 +18,8 @@ for (let profile of family.profiles.filter(t => t.role === "child")) {
 }
 
 for (let reward of rewards) {
-    if (reward.purchase_date > new Date(new Date().getTime() - 1.1 * 60 * 60 * 1000))
+    if (reward.purchase_date > new Date(new Date().getTime() - 6 * 60 * 60 * 1000)) {
+        console.log(`Saving ${reward.id}`);
         await database.saveReward(reward.id, reward.user_id, kids[reward.user_id], reward.title, reward.purchase_date.toUTCString(), reward.redeem_date?.toUTCString(), reward.redeem_date !== undefined);
+    }
 }
