@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  joon-api:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: joon-api
+    env_file:
+      - .env
