@@ -16,4 +16,4 @@ COPY --chown=node:node . .
 
 RUN npm install
 
-ENTRYPOINT ["node", "syncRewards.js"]
+ENTRYPOINT ["node", "--no-deprecation", "syncRewards.js"]
